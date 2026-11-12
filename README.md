@@ -1,7 +1,3 @@
-Here’s a clean, GitHub-ready setup guide in English. You can paste it directly into a `README.md`.
-
----
-
 # Fish + Reef DevOps Setup
 
 A minimal, fast Fish shell setup for DevOps work on Gentoo Linux.  
