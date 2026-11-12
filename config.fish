@@ -27,9 +27,10 @@ function fish_prompt
     set_color normal
 end
 
-# for niri kdl,  Mod+Y { spawn "foot" "--config=/home/to1z/.config/foot/foot-yazi.ini" "yazi"; }
 alias y='foot --config=$HOME/.config/foot/foot-yazi.ini yazi'
-
 abbr -a v nvim
 abbr -a sv sudo -E nvim
 abbr -a shx sudo -E hx
+
+zoxide init fish | source
+atuin init fish | source
