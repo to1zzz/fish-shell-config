@@ -12,8 +12,8 @@ fisher install PatrickF1/fzf.fish
 
 3. zoxide
 cargo install zoxide
-# zoxide init fish | source
+// zoxide init fish | source
 
 4. atuin
 cargo install --locked atuin
-# atuin init fish | source
+// atuin init fish | source
