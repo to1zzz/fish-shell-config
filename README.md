@@ -19,7 +19,7 @@ fish_add_path ~/.cargo/bin
 
 ```fish
 sudo emerge --sync
-sudo emerge sys-apps/ripgrep sys-apps/fd sys-apps/bat app-shells/zoxide app-misc/fzf
+sudo emerge --ask sys-apps/ripgrep sys-apps/fd sys-apps/bat sys-apps/eza sys-block/dust sys-process/procs sys-apps/lsd app-shells/zoxide sys-apps/sd app-shells/fzf
 ```
 
 > `fzf` is the binary required by `fzf.fish`.  
