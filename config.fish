@@ -34,3 +34,4 @@ abbr -a shx sudo -E hx
 
 zoxide init fish | source
 atuin init fish | source
+set -gx MANPAGER "sh -c 'col -bx | bat -l man -p'"
