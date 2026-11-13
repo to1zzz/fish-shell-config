@@ -8,7 +8,6 @@ Includes Bash compatibility via Reef, fuzzy finding, smart directory jumping, an
 - Gentoo Linux (adjust package manager commands for other distros)
 - Fish shell installed
 - Rust/Cargo installed (`cargo` available)
-- A Nerd Font installed for Tide icons (e.g. Meslo Nerd Font)
 
 ## 1. Add Cargo binaries to PATH
 
@@ -57,7 +56,6 @@ reef: enabled (display: bash, history: bash, persist: state, confirm: on)
 
 ```fish
 fisher install PatrickF1/fzf.fish
-fisher install IlanCosman/tide@v6
 ```
 
 ## 5. Install Atuin (smart history)
@@ -80,14 +78,11 @@ zoxide init fish | source
 atuin init fish | source
 ```
 
-## 7. Activate and configure
+## 7. Activate
 
 ```fish
 exec fish
-tide configure
 ```
-
-`tide configure` launches an interactive wizard. Answer the prompts to build your prompt.
 
 ## 8. Verify everything
 
@@ -124,5 +119,5 @@ set -gx MANPAGER "sh -c 'col -bx | bat -l man -p'"
 
 - Reef translates Bash syntax on the fly. `reef persist state` keeps exported variables across commands with minimal overhead.
 - `reef confirm on` shows how Reef will translate or execute a command before running it. Turn it off later with `reef confirm off`.
-- Tide replaces the custom `fish_prompt` function. Remove it with `fisher remove IlanCosman/tide` if you want to revert.
+- The shell prompt is managed by your custom `fish_prompt` function defined in `~/.config/fish/config.fish`.
 - `reef-tools` installs wrappers for `grep`, `find`, `cat`, etc. They fall back to the original utilities if the modern replacements are missing.
