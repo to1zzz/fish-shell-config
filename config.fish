@@ -31,6 +31,8 @@ alias y='foot --config=$HOME/.config/foot/foot-yazi.ini yazi'
 abbr -a v nvim
 abbr -a sv sudo -E nvim
 abbr -a shx sudo -E hx
+#abbr -a hx helix
+#abbr -a shx sudo -E helix
 
 zoxide init fish | source
 atuin init fish | source
